@@ -1,0 +1,8 @@
+#!/bin/sh
+
+touch ~/.gitignore_global
+echo ".DS_Store" >> ~/.gitignore_global 
+echo "._.DS_Store" >> ~/.gitignore_global
+echo "**/.DS_Store" >> ~/.gitignore_global
+echo "**/._.DS_Store" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
